@@ -23,7 +23,7 @@ jobs:
           images: ${{ env.REISTORY }}/${{ github.repository }} #
 
       - name: Log in to Github container registory
-        uses: docker-login/action@v3
+        uses: docker/login-action@v3
         with:
           registory: ${{ env.REISTORY }}
           username:  ${{ github.actor }}
